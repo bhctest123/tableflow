@@ -1,0 +1,22 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "command": "cp  tableflow",
+      "name": "c"
+    },
+    {
+      "command": "cp .env.example .env",
+      "name": "cp .env.example .env"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "docker-compose up -d": {
+      "name": "docker-compose up -d",
+      "command": "docker-compose up -d",
+      "runAtStart": true
+    }
+  }
+}
